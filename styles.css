@@ -1,0 +1,379 @@
+@font-face {
+  font-family: Lexend;
+  src: url(assets/fonts/Lexend-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url(assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  background: #0f1729;
+  padding: 5px;
+  padding-bottom: 60px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  font-family: Lexend;
+  font-size: 20px;
+}
+
+.tab {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+}
+
+.tab tr, td, a {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.tab td {
+  outline: 1px solid #595959;
+  height: 60px;
+  padding: 0px;
+}
+
+.tab table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 20px;
+}
+
+a {
+  display: block;
+  font-size: 25px;
+}
+
+a:hover {
+  color: #ffa500;
+}
+
+.tab tr :active {
+  background: #1e2d52;
+}
+
+.intro {
+  color: #ffa500;
+  font-family: Lexend;
+  margin-top: 100px;
+  margin-left: 300px;
+  padding-right: 0%;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #595959;
+  padding-left: 20px;
+}
+
+#greet {
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+#name {
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: -3px;
+  margin-bottom: -5px;
+}
+
+#title {
+  font-size: 30px;
+  margin-top: 0px;
+  color: #ffffff;
+}
+
+#introParagraph {
+  font-size: 25px;
+  color: #e6e6e6;
+  width: 70%;
+  font-family: Playfair Display;
+}
+
+#profile {
+  width: 400px;
+  height: 400px;
+  text-align: left;
+  border: 1px solid #ffa500;
+  border-radius: 20px;
+  margin-right: 300px;
+}
+
+.social {
+  color: #ffffff;
+  font-size: 70px;
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+#header {
+  color: #ffa500;
+  font-family: Lexend;
+  margin-left: 250px;
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+
+.sampleProject {
+  display: grid;
+  grid-template-columns: repeat(auto-fiLL, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project h3 {
+  color: #ffffff;
+  font-family: Lexend;
+  font-size: 25px;
+}
+
+.project img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 20px;
+  color: #595959;
+}
+
+.formContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  font-family: Lexend;
+  background-color: #0f1729;
+  color: #ffffff;
+  outline: 1px solid #595959;
+  border: none;
+  border-radius: 5px;
+  width: 108%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+button:hover {
+  background: #1e2d52;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 20px;
+}
+
+td {
+  padding: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 1366px) {
+  .intro {
+    margin-left: 300px;
+  }
+
+  #profile {
+    margin-right: 300px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .tab {
+    width: 70%;
+  }
+
+  .intro {
+    margin-left: 200px;
+  }
+
+  #profile {
+    margin-right: 0;
+    margin: 20px auto;
+  }
+
+  #introParagraph {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .intro {
+    margin-left: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #profile {
+    margin-right: 0;
+    margin: 20px auto;
+  }
+
+  #introParagraph {
+    width: 100%;
+  }
+
+  .tab {
+    width: 80%;
+  }
+
+  .tab table {
+    border-spacing: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    padding: 0;
+  }
+
+  .intro {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  #profile {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  #introParagraph {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .tab {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tab table {
+    border-spacing: 5px;
+  }
+
+  .tab td {
+    padding: 5px;
+  }
+
+  .tab a {
+    font-size: 18px;
+  }
+
+  .sampleProject {
+    width: 90%;
+  }
+
+  .sampleProject tr, td, th {
+    font-size: 20px;
+  }
+
+  .formContainer {
+    margin-top: 20px;
+  }
+
+  form {
+    width: 250px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .social {
+    font-size: 40px;
+  }
+
+}
+
+/* For very small screens (below s) */
+@media (max-width: 479px) {
+  #introParagraph {
+    font-size: 18px;
+  }
+
+  .tab a {
+    font-size: 16px;
+  }
+
+  .sampleProject tr,td,th {
+    font-size: 18px;
+  }
+
+  .formContainer {
+    margin-top: 10px;
+  }
+
+  form {
+    width: 200px;
+  }
+
+  .social {
+    font-size: 30px;
+  }
+}
